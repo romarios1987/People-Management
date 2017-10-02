@@ -24,3 +24,6 @@ tr.hidden-row td {
 tr.hidden-row td:not(:first-child) {
     visibility: hidden;
 }
+.container-fluid h2{
+    margin: 30px 0;
+}
