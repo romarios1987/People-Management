@@ -1,0 +1,26 @@
+#main-form .row{
+    align-items: center;
+}
+#main-form .row label{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.has-error{
+    border-color: red;
+}
+.has-success{
+    border-color: green;
+}
+.hidden {
+    display: none;
+}
+
+tr.hidden-row td {
+    max-width: 200px;
+    overflow: hidden;
+}
+
+tr.hidden-row td:not(:first-child) {
+    visibility: hidden;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>People-Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center">People Management</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Add New User</h2>
+
+            <form id="main-form">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="address" class="col-sm-2">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address" placeholder="Enter your Address">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2">Phone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your Phone">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="birth" class="col-sm-2">Birth</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="birth" placeholder="Enter your Birth Date">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="sex" class="col-sm-2">Sex</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="sex" name="sex">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <div class="form-group button-block">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2>List Users</h2>
+            <div class="table-responsive ">
+                <!-- Table: Begin -->
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Sex</th>
+                        <th>Birth</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <!-- Table: End -->
+            </div>
+        </div>
+    </div>
+</div><!--/.container-fluid-->
+<script src="script.js"></script>
+</body>
+</html>
